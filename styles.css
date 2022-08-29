@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.header-container{
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+}
+
+.header-right{
+    display: flex;
+    gap: 64px;
+}
