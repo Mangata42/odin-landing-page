@@ -34,6 +34,9 @@ p{
 /*    HEADER    */
 
 .header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     background-color: #1f2937;
     height: 500px;
@@ -44,9 +47,8 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1300px;
     margin-top: 16px;
-    margin-left: 325px;
-    margin-right: 325px;
 }
 
 .header-left p{
@@ -62,14 +64,10 @@ p{
 
 .header-info-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 1300px;
     margin: 100px 250px;
     gap: 64px;
-}
-
-.info-left{
-    width: 600px;
-    height: auto;
 }
 
 #info-title { 
@@ -91,14 +89,16 @@ p{
 /*    CARDS    */
 
 .cards-info-container{
+    display: flex;
+    flex-direction: column;
     color: #000;
     height: 500px;
     width: 100%;
     text-align: center;
 }
 
-.cards-text{
-    margin: 64px 0;
+.cards-title{
+    margin: 64px;
     font-size: 36px;
     font-weight: 900;
     color: #1f2937
@@ -139,12 +139,12 @@ p{
     color: #1f2937;
 }
 
-.author{
+#author{
     width: 900px;
     height: auto;
     text-align: end;
-    font-size: 30px;
     font-weight: 700;
+    font-size: 36px;
 }
 
 /*    CALL TO ACTION!    */
@@ -159,7 +159,6 @@ p{
 
 .call-to-action{
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 1100px;
     height: 150px;
@@ -168,10 +167,13 @@ p{
     color: #fff;
 }
 
-.action-content{ margin-right: 300px;}
+.action-content-left,
+.action-content-right{
+    margin: auto;
+    font-size: 20px;
+}
 
 .button#action{
-    margin-top: 10px;
     border: 2px solid white;
 }
 
