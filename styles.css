@@ -1,64 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700&display=swap');
+
+
+/*    GENERAL     */
 
 *{
     margin: 0px;
     padding: 0px;
+    /* border: 1px solid red; */
 }
 
 body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #1f2937;
-    color: white;
     font-family: "Roboto", sans-serif;
-    padding: 0px 64px;
 }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
-}
-
-.header-container{
-    margin-top: 16px;
-}
-
-.header-links-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.header-left p{
-    font-weight: 700;
-    font-size: 35px;
-    margin-bottom: 10px;
-}
-
-.header-right{
-    display: flex;
-    gap: 32px;
-}
-
-.header-info-container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-    flex-wrap: wrap;
-}
-
-.info-left{
-    margin-right: 64px;
-    width: 600px;
-    height: auto;
-}
-
-#info-title { 
-    font-size: 60px; 
-    font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .button {
@@ -71,6 +31,53 @@ p{
     font-weight: 700;
 }
 
+/*    HEADER    */
+
+.header-container{
+    color: white;
+    background-color: #1f2937;
+    height: 500px;
+    width: 100%;
+}
+
+.header-links-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 325px;
+    margin-right: 325px;
+}
+
+.header-left p{
+    font-weight: 700;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-right{
+    display: flex;
+    gap: 32px;
+}
+
+.header-info-container{
+    display: flex;
+    justify-content: center;
+    margin: 100px 250px;
+    gap: 64px;
+}
+
+.info-left{
+    width: 600px;
+    height: auto;
+}
+
+#info-title { 
+    font-size: 48px; 
+    font-weight: 700;
+    color: #e5e7eb;
+}
+
 .button#header{
     margin-top: 10px;
     border: none;
@@ -78,5 +85,104 @@ p{
 
 #info-img{
     width: 600px;
-    height: 300px;
+    height: auto;
+}
+
+/*    CARDS    */
+
+.cards-info-container{
+    color: #000;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.cards-text{
+    margin: 64px 0;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.card-border{
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(97, 97, 217);
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+/*    QUOTE    */
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #e5e7eb; 
+    height: 500px;
+    width: 100%;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: 100;
+    width: 900px;
+    height: auto;
+    color: #1f2937;
+}
+
+.author{
+    width: 900px;
+    height: auto;
+    text-align: end;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/*    CALL TO ACTION!    */
+
+.call-to-action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.call-to-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 150px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.action-content{ margin-right: 300px;}
+
+.button#action{
+    margin-top: 10px;
+    border: 2px solid white;
+}
+
+/*    FOOTER    */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color:#1f2937;
+    color: #fff;
 }
