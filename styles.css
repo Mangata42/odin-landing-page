@@ -1,25 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-color: #1f2937;
     color: white;
     font-family: "Roboto", sans-serif;
+    padding: 0px 64px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .header-container{
+    margin-top: 16px;
+}
+
+.header-links-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 200px;
+    flex-wrap: wrap;
 }
 
 .header-left p{
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 
 .header-right{
     display: flex;
-    gap: 64px;
+    gap: 32px;
+}
+
+.header-info-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.info-left{
+    margin-right: 64px;
+    width: 600px;
+    height: auto;
+}
+
+#info-title { 
+    font-size: 60px; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #3882f6;
+    color: #fff;
+    border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button#header{
+    margin-top: 10px;
+    border: none;
+}
+
+#info-img{
+    width: 600px;
+    height: 300px;
 }
